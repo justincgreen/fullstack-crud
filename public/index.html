@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack CRUD</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+
+  <div class="loader">Loading...</div>
+  <div class="todo-list"></div>
+
+  <div style="margin-top: 20px;">
+    <button class="btn-add" onclick="addTodo()">Add Todo</button>
+    <input type="text" placeholder="Enter todo item" class="add-todo-input">
+  </div>
+
+  <div style="margin-top: 20px;">
+    <button class="btn-delete" onclick="deleteTodo()">Delete Todo</button>
+    <input type="number" placeholder="Enter todo id" min="0" class="delete-todo-input">
+  </div>
+
+  <div style="margin-top: 20px;">
+    <button class="btn-delete-all" onclick="deleteAllTodos()">Delete All Todos</button>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <button class="btn-edit-todo" onclick="updateTodo(4, 'Manual update')">Edit Todo (manually added id and updated task for arguments on FE)</button>
+  </div>
+
+  <script src="/js/index.js"></script>
+</body>
+</html>
